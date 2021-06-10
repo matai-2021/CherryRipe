@@ -1,12 +1,143 @@
-  <form action="POST">
-    <h1>Question 1</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+	<title>
+		Which Cherry Ripper member are you?
+	</title>
+	<style>
+
+		/* Styling the Body element i.e. Color,
+		Font, Alignment */
+		body {
+			background-color: #05c46b;
+			font-family: Verdana;
+			text-align: center;
+		}
+
+		/* Styling the Form (Color, Padding, Shadow) */
+		form {
+			background-color: #fff;
+			max-width: 500px;
+			margin: 50px auto;
+			padding: 30px 20px;
+			box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+		}
+
+		/* Styling form-control Class */
+		.form-control {
+			text-align: left;
+			margin-bottom: 25px;
+		}
+
+		/* Styling form-control Label */
+		.form-control label {
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		/* Styling form-control input,
+		select, textarea */
+		.form-control input,
+		.form-control select,
+		.form-control textarea {
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			padding: 10px;
+			display: block;
+			width: 95%;
+		}
+
+		/* Styling form-control Radio
+		button and Checkbox */
+		.form-control input[type="radio"],
+		.form-control input[type="checkbox"] {
+			display: inline-block;
+			width: auto;
+		}
+
+		/* Styling Button */
+		button {
+			background-color: #05c46b;
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			font-size: 21px;
+			display: block;
+			width: 100%;
+			margin-top: 50px;
+			margin-bottom: 20px;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Which Cherry Ripper Member are you?</h1>
+
+	<!-- Create Form -->
+	<form id="form" action="POST">
+
+		<div class="form-control">
+			<label>
+				Would you recommed GeeksforGeeks
+				to a freind?
+			</label>
+
+			<!-- Input Type Radio Button -->
+			<label for="recommed-1">
+				<input type="radio"
+					id="recommed-1"
+					name="recommed">Yes</input>
+			</label>
+			<label for="recommed-2">
+				<input type="radio"
+					id="recommed-2"
+					name="recommed">No</input>
+			</label>
+			<label for="recommed-3">
+				<input type="radio"
+					id="recommed-3"
+					name="recommed">Maybe</input>
+			</label>
+		</div>
+
+
+		<div class="form-control">
+			<label for="comment">
+				Any comments or suggestions
+			</label>
+
+ <h1>Question 1</h1>
     {{!-- needs action attribute? --}}
     {{!-- Do we need our forms within a main form to send all data to post? --}}
-    <input type="radio" name="question 1">answer 1 
-    <input type="radio" name="question 1">answer 2
-    <input type="radio" name="question 1">answer 3
-    <input type="radio" name="question 1">answer 4
-  </form>
+    <input type="radio" name="question 1" value="a">answer 1 
+    <input type="radio" name="question 1" value="b">answer 2
+    <input type="radio" name="question 1" value="c">answer 3
+    <input type="radio" name="question 1" value="d">answer 4
+
+    <h2>Question 2</h2>
+    {{!-- needs action attribute? --}}
+    {{!-- Do we need our forms within a main form to send all data to post? --}}
+    <input type="radio" name="question 1" value="a">answer 1 
+    <input type="radio" name="question 1" value="b">answer 2
+    <input type="radio" name="question 1" value="c">answer 3
+    <input type="radio" name="question 1" value="d">answer 4
+
+		<!-- Multi-line Text Input Control -->
+		<button type="submit" value="submit">
+			Submit
+		</button>
+	</form>
+</body>
+
+</html>
+
+  
+
 
 <button>Submit!</button>
 
