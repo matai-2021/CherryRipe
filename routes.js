@@ -12,6 +12,8 @@ routes.get('/result', (req, res) => {
   res.render('result')
 })
 
-// routes.post('/', (req, res) => {
-//   res.redirect('/result')
-// })
+routes.post('/', (req, res) => {
+  console.log(Object.values(req.body))
+  res.redirect('/result')
+  // res.send('this is a post')
+})

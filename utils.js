@@ -1,0 +1,3 @@
+function decideResult (arr) {
+  arr.
+}
