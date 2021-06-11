@@ -13,27 +13,21 @@ function decideResult (answers) {
   
   for (let i = 0; i < answers.length; i++) {
     let value = answers[i]
-    if (answers[i] === 'a') {
+    if (value === 'a') {
       a[0]++
     }
-    if (answers[i] === 'b') {
+    if (value === 'b') {
       b[0]++
     }
-    if (answers[i] === 'c') {
+    if (value === 'c') {
       c[0]++
     }
-    if (answers[i] === 'd') {
+    if (value === 'd') {
       d[0]++
     }
   } 
-  console.log('a:', a)
-  console.log('b:', b)
-  console.log('c:', c)
-  console.log('d:', d)
   
-  let scoredResults = [a, b, c, d]
-  
-  console.log(scoredResults)
+  let scoredResults = [a, b, c, d] // scored results are updated valued dependant on answers
   
   function getResult (arr) {
     const value = (Math.max(a[0], b[0], c[0], d[0]))
@@ -44,14 +38,12 @@ function decideResult (answers) {
     }
   }
 
-  const returned =  getResult(scoredResults)
+  const theResult =  getResult(scoredResults)
   
   a = [0, 'koko']
   b = [0, 'zac']
   c = [0, 'susie']
   d = [0, 'josh']
   
-  return returned
-  
-  
+  return theResult
 }
