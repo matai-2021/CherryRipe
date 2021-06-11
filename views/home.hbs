@@ -9,11 +9,83 @@
 		Which Cherry Ripper member are you?
 	</title>
 	<style>
-
 		/* Styling the Body element i.e. Color,
 		Font, Alignment */
 		body {
+			background-color: red;
+			font-family: Arial, Helvetica, sans-serif;
+			text-align: center;
+      font
+		}
+
+		/* Styling the Form (Color, Padding, Shadow) */
+		form {
+			background-color:goldenrod;
+			max-width: 500px;
+			margin: 50px auto;
+			padding: 30px 20px;
+			box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+		}
+
+		/* Styling form-control Class */
+		.form-control {
+			text-align: left;
+			margin-bottom: 25px;
+		}
+
+		/* Styling form-control Label */
+		.form-control label {
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		/* Styling form-control input,
+		select, textarea */
+		.form-control input,
+		.form-control select,
+		.form-control textarea {
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			padding: 10px;
+			display: block;
+			width: 95%;
+		}
+
+		/* Styling form-control Radio
+		button and Checkbox */
+		.form-control input[type="radio"],
+		.form-control input[type="checkbox"] {
+			display: inline-block;
+			width: auto;
+		}
+
+		/* Styling Button */
+		button {
 			background-color: #05c46b;
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			font-size: 21px;
+			display: block;
+			width: 100%;
+			margin-top: 50px;
+			margin-bottom: 20px;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Which Cherry Ripper Member are you?</h1>
+<img src="/images/png-transparent-cherry-red-ripe-two-fruits-plants-food-edible-berries-thumbnail.png" alt="transPARENT"
+	<!-- Create Form -->
+	<form id="form" action="POST">
+
+		{{!-- <div class="form-control"> Question 1<style>
+		/* Styling the Body element i.e. Color,
+		Font, Alignment */
+		body {
+			background-color:pink;
 			font-family: Verdana;
 			text-align: center;
 		}
@@ -74,59 +146,174 @@
 		}
 	</style>
 </head>
+				<input type="radio" id="recommed-1" name="recommed">Yes</input>
+			</label> 
+		</div> --}}
 
-<body>
-	<h1>Which Cherry Ripper Member are you?</h1>
+    <h4>1. It’s a Friday night and you’ve just finished work. What are you doing to unwind?</h4>
+    <div class="form-control">
+    <label><input type="radio" name="question 1" value="a"> Straight home and chill!</label>
+    <label><input type="radio" name="question 1" value="b"> Beer and Netflix </label>
+    <label><input type="radio" name="question 1" value="d"> A cheeky couple of beersies</label>
+    <label><input type="radio" name="question 1" value="c"> Go out for a pet nat with the girlfriends</label>
+    </div>
 
-	<!-- Create Form -->
-	<form id="form" action="POST">
+       <h4> 2. Ummmm… You have just won the Lotto and are $10 million richer! Yeah baby! What will you be doing with this money?</h1>
+    <div class="form-control">
+    <label><input type="radio" name="question 2" value="a"> Shout everyone lunch in Dev Academy</label>
+    <label><input type="radio" name="question 2" value="c"> Buy a house on Great Barrier</label>
+    <label><input type="radio" name="question 2" value="d"> Build a swimming pool, buy a jet ski for it.</label>
+    <label><input type="radio" name="question 2" value="b"> Continue on with life WITH the peace of mind that you can retire any time.</label>
+    </div>
 
-		<div class="form-control">
-			<label>
-				Would you recommed GeeksforGeeks
-				to a freind?
-			</label>
+       <h4>3. Tomorrow you get to wake up as a celebrity and spend 24 hours as them. Who would it be? </h4>
+    <div class="form-control">
+    <label><input type="radio" name="question 3" value="b"> Conan O’Brien </label>
+    <label><input type="radio" name="question 3" value="c"> John Waters</label>
+    <label><input type="radio" name="question 3" value="a"> Johnny Depp </label>
+    <label><input type="radio" name="question 3" value="d"> Elon Musk</label>
+    </div>
 
-			<!-- Input Type Radio Button -->
-			<label for="recommed-1">
-				<input type="radio"
-					id="recommed-1"
-					name="recommed">Yes</input>
-			</label>
-			<label for="recommed-2">
-				<input type="radio"
-					id="recommed-2"
-					name="recommed">No</input>
-			</label>
-			<label for="recommed-3">
-				<input type="radio"
-					id="recommed-3"
-					name="recommed">Maybe</input>
-			</label>
-		</div>
+       <h4>4. You have found yourself in a new relationship - what is your ideal first date?</h4>
+    <div class="form-control">
+    <label><input type="radio" name="question 4" value="c"> Going for a drink and a gig on K Road</label>
+    <label><input type="radio" name="question 4" value="b"> Watch a scary movie - because you can’t watch scary movies alone</label>
+    <label><input type="radio" name="question 4" value="d"> Dinner, drinks and a walk along the waterfront</label>
+    <label><input type="radio" name="question 4" value="a"> Go for a bush walk and kayaking! Spend all day in nature!</label>
+    </div>
+
+       <h4> 5. What does the first hour of your day look like?</h4>
+    <div class="form-control">
+    <label><input type="radio" name="question 5" value="d"> Shower, tea, breaky</label>
+    <label><input type="radio" name="question 5" value="a"> Getting ready for bootcamp</label>
+    <label><input type="radio" name="question 5" value="c"> Enjoying the peace and quiet and a coffee</label>
+    <label><input type="radio" name="question 5" value="b"> Staying in bed looking at reddit, then having a long shower.</label>
+    </div>
+
+        <h4>6. You are now part of a band called the Cherry Rippers. What instrument are you playing? </h4>
+    <div class="form-control">
+    <label><input type="radio" name="question 6" value="c"> Drums</label>
+    <label><input type="radio" name="question 6" value="b"> Rippin them guitars</label>
+    <label><input type="radio" name="question 6" value="d"> Shredding lead gat</label>
+    <label><input type="radio" name="question 6" value="a"> Trumpet</label>
+    </div>
+
+        <h4>7. Tonight you will magically be delivered dinner you would like. What will it be?</h4>
+    <div class="form-control">
+    <label><input type="radio" name="question 7" value="a"> Ramen</label>
+    <label><input type="radio" name="question 7" value="d"> Karaage chicken
+    <label><input type="radio" name="question 7" value="c"> A zinger burger combo with potato and gravy and wicked wings</label>
+    <label><input type="radio" name="question 7" value="b"> Oven baked cheese pasta with a sausage pizza from Sal’s</label>
+</label>
+    </div>
+
+        <h4>8. What Dwayne the Rock Johnson movie are you?</h4>
+    <div class="form-control">
+    <label><input type="radio" name="question 8" value="a"> Moana</label>
+    <label><input type="radio" name="question 8" value="c"> Skyscraper OR Fast and Furious 7</label>
+    <label><input type="radio" name="question 8" value="d"> Tooth fairy</label>
+    <label><input type="radio" name="question 8" value="b"> Mummy Returns</label>
+    </div>
+
+        <h4>9. After a good nights sleep you have acquired professional level ability in a sport of your choice. What sport will you be winning a gold medal in at the next Olympics?</h4>
+    <div class="form-control">
+    <label><input type="radio" name="question 9" value="b"> Gymnastics</label>
+    <label><input type="radio" name="question 9" value="c"> Sprints OR high jump</label>
+    <label><input type="radio" name="question 9" value="d"> Archery #Legolas</label>
+    <label><input type="radio" name="question 9" value="a"> Fencing</label>
+    </div>
+
+        <h4>10. Where did you hang out the most in the playground in primary school?</h4>
+    <div class="form-control">
+    <label><input type="radio" name="question 10" value="c"> Monkey bars</label>
+    <label><input type="radio" name="question 10" value="a"> Everywhere</label>
+    <label><input type="radio" name="question 10" value="d"> The fields!</label>
+    <label><input type="radio" name="question 10" value="b"> Basketball court</label>
+    </div>
+
+            <h4>11. If you were a technology device, what would you be and why?</h4>
+    <div class="form-control">
+    <label><input type="radio" name="question 11" value="c"> Airpods</label>
+    <label><input type="radio" name="question 11" value="b"> Laptop, to have access to internet for infinite Netflix and youtube</label>
+    <label><input type="radio" name="question 11" value="d"> 16gb USB Stick</label>
+    <label><input type="radio" name="question 11" value="a"> CCTV camera</label>
+    </div>
+
+        <h4>12. There’s a fruit salad in front of you with every kind of fruit in it. What fruit are you avoiding?</h4>
+    <div class="form-control">
+    <label><input type="radio" name="question 12" value="b"> Kiwi fruit. You prefer eating Kiwi fruit on its own</label>
+    <label><input type="radio" name="question 12" value="c"> Bananas</label>
+    <label><input type="radio" name="question 12" value="a"> Pear</label>
+    <label><input type="radio" name="question 12" value="d"> Rock melon, yuck.</label>
+    </div>
+
+    <h4>13. What is your ideal breakfast?</h4>
+    <div class="form-control">
+    <label><input type="radio" name="question 13" value="a"> Scrambled eggs on toast</label>
+    <label><input type="radio" name="question 13" value="b"> McDonald’s NYC Bagel + hash brown + hot chocolate with soy milk + pancake with two strips of bacon and maple sauce</label>
+    <label><input type="radio" name="question 13" value="c"> Big breakfast</label>
+    <label><input type="radio" name="question 13" value="d"> Biiiig fry up</label>
+    </div>
+
+    <h4>14. You have accidentally dropped your sibling’s phone and the screen is now cracked. What are you going to do next?</h4>
+    <div class="form-control">
+    <label><input type="radio" name="question 14" value="a"> "I know nothing about it"</label>
+    <label><input type="radio" name="question 14" value="d"> Run</label>
+    <label><input type="radio" name="question 14" value="c"> Cry</label>
+    <label><input type="radio" name="question 14" value="b"> Say, sorry not sorry lol</label>
+    </div>
+
+    <h4>15. You are at a job interview and the interviewer asks what your greatest weakness is - what is it?</h4>
+    <div class="form-control">
+    <label><input type="radio" name="question 15" value="d"> Overthinking</label>
+    <label><input type="radio" name="question 15" value="a"> Anti-social</label>
+    <label><input type="radio" name="question 15" value="c"> Working too hard</label>
+    <label><input type="radio" name="question 15" value="b"> Having too many goals</label>
+    </div>
+
+  <h4>16. You have won a magazine subscription for a year. What magazine are you subscribing to?</h4>
+    <div class="form-control">
+    <label><input type="radio" name="question 16" value="c"> Apartamento</label>
+    <label><input type="radio" name="question 16" value="b"> Time magazine</label>
+    <label><input type="radio" name="question 16" value="a"> Cool hidden spots in NZ you should visitl</label>
+    <label><input type="radio" name="question 16" value="d"> Does anybody still buy magazine subscriptions???</label>
+    </div>
+
+  <h4>17. What is your party trick?</h4>
+    <div class="form-control">
+    <label><input type="radio" name="question 17" value="b"> Make a good combination of beer + soju</label>
+    <label><input type="radio" name="question 17" value="a"> Make shadow puppets</label>
+    <label><input type="radio" name="question 17" value="d"> Big beer pong plays</label>
+    <label><input type="radio" name="question 17" value="c"> Doing a Michael Caine impersonation</label>
+    </div>
+
+  <h4>18. What 4 adjectives would your friends use to describe you?</h4>
+    <div class="form-control">
+    <label><input type="radio" name="question 18" value="b"> Earnest, empathetic, weird, average</label>
+    <label><input type="radio" name="question 18" value="d"> Honest, kind, empathic, chillllll</label>
+    <label><input type="radio" name="question 18" value="c"> Cutie-pie, reliable, composed, undiagnosed chaos</label>
+    <label><input type="radio" name="question 18" value="a"> Energetic, flexible, honest and organised</label>
+    </div>
+
+      <h4>19. What is your go-to shoe?</h4>
+    <div class="form-control">
+    <label><input type="radio" name="question 19" value="a"> Nike Sneakers</label>
+    <label><input type="radio" name="question 19" value="d"> Stan Smiths</label>
+    <label><input type="radio" name="question 19" value="b"> New Balance</label>
+    <label><input type="radio" name="question 19" value="c"> Doc Martens</label>
+    </div>
+
+  <h4>20. What is your favourite board game?</h4>
+    <div class="form-control">
+    <label><input type="radio" name="question 20" value="d"> Articulate</label>
+    <label><input type="radio" name="question 20" value="a"> Life</label>
+    <label><input type="radio" name="question 20" value="c"> Catan</label>
+    <label><input type="radio" name="question 20" value="b"> Avalon</label>
+    </div>
 
 
-		<div class="form-control">
-			<label for="comment">
-				Any comments or suggestions
-			</label>
 
- <h1>Question 1</h1>
-    {{!-- needs action attribute? --}}
-    {{!-- Do we need our forms within a main form to send all data to post? --}}
-    <input type="radio" name="question 1" value="a">answer 1 
-    <input type="radio" name="question 1" value="b">answer 2
-    <input type="radio" name="question 1" value="c">answer 3
-    <input type="radio" name="question 1" value="d">answer 4
-
-    <h2>Question 2</h2>
-    {{!-- needs action attribute? --}}
-    {{!-- Do we need our forms within a main form to send all data to post? --}}
-    <input type="radio" name="question 1" value="a">answer 1 
-    <input type="radio" name="question 1" value="b">answer 2
-    <input type="radio" name="question 1" value="c">answer 3
-    <input type="radio" name="question 1" value="d">answer 4
-
+    
 		<!-- Multi-line Text Input Control -->
 		<button type="submit" value="submit">
 			Submit
@@ -136,9 +323,5 @@
 
 </html>
 
-  
-
-
-<button>Submit!</button>
 
 
