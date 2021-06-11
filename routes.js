@@ -11,7 +11,8 @@ routes.get('/', (req, res) => {
 })
 
 routes.get('/result/:name', (req, res) => {
-  res.render('result')
+  const resultName = req.params.name
+  res.render(`${resultName}`)
 })
 
 routes.post('/', (req, res) => {
